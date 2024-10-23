@@ -101,6 +101,25 @@ nav,
   color: purple;
 }
 
+@media (max-width: 768px) {
+  nav {
+    max-width: 100%;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .logo {
+    margin-inline: auto;
+
+    img {
+      width: 60px;
+      height: auto;
+    }
+  }
+}
+
 /* type */
 
 .abilities {
@@ -357,6 +376,60 @@ nav,
 
 /* content */
 
+@media (max-width: 768px) {
+  .content {
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .explanation {
+    width: 90% !important;
+  }
+
+  .info {
+    width: 90% !important;
+  }
+
+  .type {
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .stats {
+    width: 90% !important;
+  }
+
+  .evolution {
+    width: 100% !important;
+
+    .evo-wrap {
+      flex-direction: column;
+      width: 80%;
+      height: 100% !important;
+      margin-inline: auto;
+      gap: 2rem;
+    }
+  }
+  .wrap {
+    height: 110em !important;
+  }
+
+  .arrow {
+    display: none !important;
+  }
+
+  .container img:nth-child(1) {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
+
 .content {
   width: 70%;
   height: auto;
@@ -480,7 +553,7 @@ audio {
   }
 
   img {
-    width: 65%;
+    width: 65% !important;
     height: auto;
     margin-top: 45px;
   }
